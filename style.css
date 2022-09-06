@@ -1,16 +1,29 @@
-body{
-    background: lightskyblue;
+@import url('https://fonts.googleapis.com/css2?family=Manrope&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
-#canvas{
+body{
+    font-family: 'Manrope', sans-serif;
+    color: #fff;
+}
+
+#container{
     box-sizing:border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    background: yellow;
-    width: 700px;
-    height: 300px;
+    flex-direction: column;
+    background: #000013;
+    width: fit-content;
+    height: fit-content;
+    padding: 4rem;
     margin: 50px auto;
+}
+.container-content {
+    display: flex;
 }
 
 #primary-number, #secondary-number{
@@ -25,11 +38,11 @@ body{
 }
 
 #primary-number{
-    border: solid 4px green;
+    border: solid 4px #feb135;
 }
 
 #secondary-number{
-    border: solid 4px blue;
+    border: solid 4px #feb135;
 }
 
 #add, #equal{
@@ -38,18 +51,21 @@ body{
     padding: 5px;
 }
 input{
-    border: solid 2px cyan;
-    width: 150px;
-    height: 30px;
+    border: none;
+    width: 125px;
+    height: 125px;
+    font-size: 3rem;
     padding-left: 25px;
 }
 
 button{
-    width: 100px;
-    height: 35px;
-    margin: 5px;
-    background: red;
-    color: white;
-    border: 1px solid lightgrey;
+    margin-top: 50px;
+    margin-bottom: 10px;
+    padding: 1rem 2rem;
+    background: #feb135;
+    color: #000013;
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 600;
     cursor: pointer;
 }
